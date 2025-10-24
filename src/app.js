@@ -43,5 +43,10 @@ app.get('/api', (req, res) => {
 
 // Mount auth routes
 app.use('/api/auth', authRoutes);
+app.use('/api/users', authRoutes);
+
+app.use((req, res) => {
+  res.status(404).json({ error: 'Route not found' });
+});
 
 export default app;
