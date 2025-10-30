@@ -1,10 +1,11 @@
 import express from 'express';
-// logger not used here; logging handled by morgan or other modules
 import helmet from 'helmet';
 import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRoutes from '#routes/auth.routes.js';
+import securityMiddleware from '#middleware/security.middleware.js';
+import logger from '#config/logger.js';
 
 const app = express();
 
@@ -14,12 +15,17 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-// standard body parsers (JSON and urlencoded)
+// Configure morgan with a custom stream. Pass options into morgan(), not into app.use as a separate arg.
+app.use(
+  morgan('combined', {
+    stream: { write: message => console.log(message.trim()) },
+  })
+);
 
-// Use morgan with default stream (stdout)
-app.use(morgan('combined'));
+app.use(securityMiddleware);
 
 app.get('/', (req, res) => {
+  logger.info('Hello from Acquisitions!');
   res.status(200).send('Hello from Acquisitions!');
 });
 
