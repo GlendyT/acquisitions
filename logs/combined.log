@@ -191,3 +191,14 @@
 {"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.39.1"}
 {"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.39.1"}
 {"ip":"::1","level":"warn","message":"Bot request blocked","path":"/health","service":"acquisitions-api","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api"}
+{"ip":"::ffff:172.18.0.1","level":"warn","message":"Bot request blocked","path":"/api/sign-up","service":"acquisitions-api","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.18.0.1","level":"warn","message":"Bot request blocked","path":"/api/sign-up","service":"acquisitions-api","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.18.0.1","level":"warn","message":"Bot request blocked","path":"/api/auth/sign-up","service":"acquisitions-api","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.18.0.1","level":"warn","message":"Bot request blocked","path":"/api/auth/sign-up","service":"acquisitions-api","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.18.0.1","level":"warn","message":"Bot request blocked","path":"/api/auth/sign-up","service":"acquisitions-api","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.18.0.1","level":"warn","message":"Bot request blocked","path":"/api/auth/sign-up","service":"acquisitions-api","userAgent":"PostmanRuntime/7.39.1"}
+{"level":"info","message":"Hello from Acquisitions!","service":"acquisitions-api"}
+{"ip":"::ffff:172.18.0.1","level":"warn","message":"Bot request blocked","path":"/","service":"acquisitions-api","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.18.0.1","level":"warn","message":"Bot request blocked","path":"/","service":"acquisitions-api","userAgent":"PostmanRuntime/7.39.1"}
+{"ip":"::ffff:172.18.0.1","level":"warn","message":"Bot request blocked","path":"/api/users","service":"acquisitions-api","userAgent":"PostmanRuntime/7.39.1"}

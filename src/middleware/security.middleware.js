@@ -21,7 +21,7 @@ const securityMiddleware = async (req, res, next) => {
         break;
 
       case 'guest':
-        limit =5;
+        limit = 5;
         message = 'Guest request limit exceeded (5 per limit). Slow down.';
         break;
     }
@@ -69,7 +69,7 @@ const securityMiddleware = async (req, res, next) => {
       });
       return res.status(403).json({
         error: 'Forbidden',
-        message,
+        message: 'Too many requests',
       });
     }
 
